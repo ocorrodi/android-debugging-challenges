@@ -46,7 +46,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return 0;
+        return movies.size();
     }
 
     @NonNull
@@ -83,6 +83,5 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
 
         Glide.with(viewHolder.ivPoster.getContext()).load(movie.getPosterUrl()).into(
                 viewHolder.ivPoster);
-
     }
 }
